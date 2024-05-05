@@ -1,86 +1,102 @@
-Python Functions, Modules and Packages
-1. Differences Between Functions, Modules, and Packages
-Functions
-A function in Python is a block of code that performs a specific task. Functions are defined using the def keyword and can take inputs, called arguments. They are a way to encapsulate and reuse code.
+# Python Zero to Hero for DevOps Engineers
 
-Example:
+<img width="1141" alt="Screenshot 2023-10-12 at 9 57 40 PM" src="https://github.com/iam-veeramalla/python-for-devops/assets/43399466/d70f5fe2-0ba3-449d-b41f-413a38fc4584">
 
-def greet(name):
-    return f"Hello, {name}!"
+## Day 1: Introduction to Python, Installation, and Configuration
+- Introduction to Python and its role in DevOps.
+- Installing Python and setting up a development environment.
+- Writing your first Python program.
 
-message = greet("Alice")
-print(message)
-In this example, greet is a function that takes a name argument and returns a greeting message.
+## Day 2: Intro to Datatypes, Working with Strings and Numbers
+- String data type in Python.
+- String manipulation and formatting.
+- Regular expressions for text processing.
+- Numeric data types in Python (int, float).
+ 
+## Day 3: Keywords and Variables
+- Understanding variables in Python.
+- Variable scope and lifetime.
+- Variable naming conventions and best practices.
+- Practice exercises and examples:
+  - Example: Using variables to store and manipulate configuration data in a DevOps context.
 
-Modules
-A module is a Python script containing Python code. It can define functions, classes, and variables that can be used in other Python scripts. Modules help organize and modularize your code, making it more maintainable.
+## Day 4: Functions, Modules and Packages
+- What are differences between function, modules and packages ?
+- How to import a package ?
+- What are Python workspaces ?
 
-Example:
+## Day 5: Environment Variables and Command Line Arguments
+- Reading and writing environment variables in Python.
+- Using the os and dotenv modules.
+- Securing sensitive information in environment variables.
+- Handling command line arguments in Python.
+- Practice exercises and examples:
+  - Example: Developing a Python script that accepts command line arguments to customize DevOps automation tasks.
 
-Suppose you have a Python file named my_module.py:
+## Day 6: Operators
+- Introduction to operators in Python.
+- Arithmetic, comparison, and logical operators.
+- Bitwise and assignment operators.
+- Practice exercises and examples:
+  - Example: Using operators to perform calculations and comparisons in a DevOps script.
 
-# my_module.py
-def square(x):
-    return x ** 2
+## Day 7: Conditional Handling using if, elif and else
+- Conditional statements (if, elif, else).
+- Practice exercises and examples:
 
-pi = 3.14159265
-You can use this module in another script:
+## Day 8: Working with Lists (Part 1)
+- Understanding lists and list data structure.
+- List manipulation and common list operations.
+- Practice exercises and examples:
+  - Example: Writing a script to manage a list of user accounts in a DevOps environment.
+  
+## Day 9: Loops
+- Loops in Python (for and while).
+- Loop control statements (break, continue).
+- Practice exercises and examples:
+  - Example: Automating a log file analysis with a loop to find errors.
 
-import my_module
+## Day 10: Working with Lists (Part 2)
+- List comprehensions.
+- Nested lists and advanced list operations.
+- Practice exercises and examples:
+  - Example: Print list of files in the list of folders provided
 
-result = my_module.square(5)
-print(result)
-print(my_module.pi)
-In this case, my_module is a Python module containing the square function and a variable pi.
+## Day 11: Working with Dictionaries and Sets (Project-1)
+- Dictionaries and key-value pairs.
+- Sets and set operations.
+- Practice exercises and examples:
+  - Example: Managing a dictionary of server configurations and optimizing retrieval.
 
-Packages
-A package is a collection of modules organized in directories. Packages help you organize related modules into a hierarchy. They contain a special file named __init__.py, which indicates that the directory should be treated as a package.
+## Day 12: Python Tasks for DevOps (Part 1) - File Operations (Project-2)
+- Introduction to File Operations and Boto3.
+- Automating File operations.
+- Practice exercises and examples:
+  - Example: Update a server resources in the server.conf file up on external notification.
 
-Example:
+## Day 13: Python Tasks for DevOps (Part 2) (Project-3)
+- Using Fabric for remote task automation.
+- AWS automation with Boto3.
+- Managing EC2 instances, S3 buckets, and more.
+- Practice exercises and examples:
+  - Example: Creating a aws script for deploying applications to remote servers.
 
-Suppose you have a package structure as follows:
+## Day 14: Github-JIRA intergration Project - (Project-4)
+- Introduction to RESTful APIs.
+- Making HTTP requests using Python.
+- Parsing JSON responses and error handling.
+- Practice exercises and examples:
+  - Example: Write a Python API which listens on a github comment and creates a ticket in JIRA.
 
-my_package/
-    __init__.py
-    module1.py
-    module2.py
-You can use modules from this package as follows:
+## Day 15: Github-JIRA intergration Project - (Project-4) - (Part-2)
+- Introduction to Flask.
+- Write your first API in python.
+- How to handle API calls and deploy your API to a server.
+- Practice exercises and examples:
+  - Example: Write a Python API which listens on a github comment and creates a ticket in JIRA.
 
-from my_package import module1
+## Day 16: Python Interview Questions & Answers
+- Beginner and intermediate Level
 
-result = module1.function_from_module1()
-In this example, my_package is a Python package containing modules module1 and module2.
-
-2. How to Import a Package
-Importing a package or module in Python is done using the import statement. You can import the entire package, specific modules, or individual functions/variables from a module.
-
-Example:
-
-# Import the entire module
-import math
-
-# Use functions/variables from the module
-result = math.sqrt(16)
-print(result)
-
-# Import specific function/variable from a module
-from math import pi
-print(pi)
-In this example, we import the math module and then use functions and variables from it. You can also import specific elements from modules using the from module import element syntax.
-
-3. Python Workspaces
-Python workspaces refer to the environment in which you develop and run your Python code. They include the Python interpreter, installed libraries, and the current working directory. Understanding workspaces is essential for managing dependencies and code organization.
-
-Python workspaces can be local or virtual environments. A local environment is the system-wide Python installation, while a virtual environment is an isolated environment for a specific project. You can create virtual environments using tools like virtualenv or venv.
-
-Example:
-
-# Create a virtual environment
-python -m venv myenv
-
-# Activate the virtual environment (on Windows)
-myenv\Scripts\activate
-
-# Activate the virtual environment (on macOS/Linux)
-source myenv/bin/activate
-Once activated, you work in an isolated workspace with its Python interpreter and library dependencies.
+## Day 17: Python Interview Questions & Answers
+- Advanced Level
